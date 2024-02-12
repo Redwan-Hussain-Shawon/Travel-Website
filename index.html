@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-['Inter']">
+    <div class="bg-[#FF5722] rounded-full blur-[90px] opacity-30 absolute" style="right:230px;opacity: .2;bottom: 180px;width: 300px;height: 300px;">
+    </div>
+    <div class="fixed" id="loaderIcons">
+        <figure>
+            <div class="dot white"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </figure>
+    </div>
+    <!-- header Start  -->
+
+    <header class="container mx-auto " id="Home">
+        <nav class="flex justify-between items-center py-3">
+            <div>
+                <img src="images/logo.png" alt="">
+            </div>
+            <!-- <div class="ab"></div> -->
+            <ul
+                class="nav-menu bg-[#fff] -top-full  flex lg:min-h-fit lg:static lg:w-fit gap-y-10 absolute  flex-col lg:flex-row min-h-[84vh]  left-0 w-full lg:justify-center items-center ">
+                <li><a href="#Home" class="nav-link">Home</a></li>
+                <li><a href="#discover" class="nav-link">Discover</a></li>
+                <li><a href="#deals" class="nav-link">Special </a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="flex items-center">
+                <button class="text-black font-medium mr-3 items-center text-sm hidden lg:visible lg:block">Log
+                    In</button>
+                <button class="btn text-sm px-2 bg-[#5D50C6] border text-[#fff] hover-btn">Sign Up</button>
+                <ion-icon onclick="toggleMenu(this)" name="menu" class="text-3xl lg:hidden ml-1"></ion-icon>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- header End -->
+
+    <!-- Hero Section Start  -->
+    <div class="hero">
+        <div class="container mx-auto grid lg:grid-cols-2 items-center mt-5">
+            <div class="text">
+                <button class="btn py-[32px] text-[#F85E9F] flex shadow-b mx-auto ">Explore the world! <img
+                        src="images/work-img.png" alt="" class="ml-2"></button>
+                <h1
+                    class="my-[35px] text-5xl font-extrabold text-center leading-[55px] effect-opacity sm:text-6xl sm:leading-[70px] lg:text-left">
+                    Travel <span class="text-[#F85E9F]"> top destination </span>
+                    of the world</h1>
+                <p class="text-sm text-[#5f5f5f] lg:text-left text-center">We always make our customer happy by
+                    providing
+                    as many choices as possible </p>
+                <div class="flex flex-col mt-5 gap-3 py-5 md:flex-row md:max-w-fit max-w-[200px]">
+                    <button class="btn bg-[#5D50C6] text-[#fff] border shadow-2xl hover-btn">Get Started</button>
+                    <button class="btn border border-[#EEEEEE] flex  "> <img src="images/play-circle.5 1.png" alt=""
+                            class="mr-2"> Get Started</button>
+                </div>
+
+            </div>
+            <div class="img flex justify-center">
+                <img src="images/hero-img.png" alt="" class="max-w-[620px] w-full animaction-left">
+            </div>
+        </div>
+
+        <div
+            class="w-[420px] h-[420px] bg-[#FF5722] rounded-full blur-[90px] opacity-30 absolute top-[-300px] left-[-200px]">
+        </div>
+    </div>
+    <!-- Hero Section End  -->
+
+    <div class="py-8 md:py-[50px]">
+        <div class="container mx-auto ">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 gap-y-8">
+                <div class="flex justify-center">
+                    <img src="images/cLogo-1.png" alt="">
+                </div>
+                <div class="flex justify-center">
+                    <img src="images/cLogo-2.png" alt="">
+                </div>
+                <div class="flex justify-center">
+                    <img src="images/cLogo-3.png" alt="">
+                </div>
+                <div class="flex justify-center">
+                    <img src="images/cLogo-4.png" alt="">
+                </div>
+                <div class="flex justify-center">
+                    <img src="images/cLogo-5.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Services Section Start  -->
+
+    <div id="services" class="md:py-[120px] py-8" id="discover">
+        <div class="container mx-auto flex items-center gap-10 flex-col lg:flex-row">
+            <div class="min-w-[330px]">
+                <h4 class="text-sm font-semibold tracking-wider  text-[#F85E9F] uppercase text-center lg:text-left">
+                    Services</h4>
+                <h2 class="text-black text-4xl font-bold mt-3 mb-8 lg:mb-0">Our top value categories for you</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-8 text-center">
+                <div class="flex items-center flex-col shadow-lg rounded-xl px-5 py-8 card-hover cursor-pointer">
+                    <img src="images/guide-img.png" alt="">
+                    <h3 class="text-lg font-semibold mt-5 mb-3">Best Tour Guide</h3>
+                    <p class="text-center text-sm text-[#5f5f5f]">What looked like a small patch of purple grass, above
+                        five feet.</p>
+                </div>
+                <div class="flex items-center flex-col shadow-lg rounded-xl px-5 py-8 card-hover cursor-pointer">
+                    <img src="images/boking-img.png" alt="">
+                    <h3 class="text-lg font-semibold mt-5 mb-3">Easy Booking</h3>
+                    <p class="text-center text-sm text-[#5f5f5f]">Square, was moving across the sand in their direction.
+                    </p>
+                </div>
+
+                <div class="flex items-center flex-col shadow-lg rounded-xl px-5 py-8 card-hover cursor-pointer">
+                    <img src="images/weather -img.png" alt="">
+                    <h3 class="text-lg font-semibold mt-5 mb-3 ">Weather Forecast</h3>
+                    <p class="">What looked like a small patch of purple grass, above
+                        five feet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section End -->
+
+    <!-- Destination Section Start  -->
+
+    <section class="py-[32px] md:py-[100px]" id="deals">
+        <div class="container mx-auto">
+            <h4>Top Destination</h4>
+            <h2>Explore top destination</h2>
+            <div class=" grid grid-cols-1 mt-12 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1000px]">
+                <div class="shadow-lg rounded-[22px] max-w-[400px] mx-auto img-hover cursor-pointer">
+                    <div class="overflow-hidden rounded-[22px]">
+                    <img src="images/card-img1.png" alt="" class="w-full h-full">
+                </div>
+                    <div class="p-6">
+                        <div class="mb-3 flex gap-10">
+                            <h3 class="font-semibold">Paradise Beach, Bantayan Island</h3>
+                            <span class="font-semibold text-[#F85E9F]">$550.16</span>
+                        </div>
+                        <p class="">Rome, Italy</p>
+                        <h3 class="flex items-center text-secondary font-semibold mt-6">4.8 <img src="images/star.png"
+                                alt="" class="ml-2"></h3>
+                    </div>
+                </div>
+                <div class="shadow-lg rounded-[22px] max-w-[400px] mx-auto img-hover cursor-pointer">
+                    <div class="overflow-hidden rounded-[22px]">
+                    <img src="images/card-img2.png" alt="" class="w-full  h-full">
+                    </div>
+                    <div class="p-6">
+                        <div class="mb-3 flex gap-10">
+                            <h3 class="font-semibold">Paradise Beach, Bantayan Island</h3>
+                            <span class="font-semibold text-[#F85E9F]">$550.16</span>
+                        </div>
+                        <span class="text-sm text-[#5f5f5f] ">Rome, Italy</span>
+                        <p class="flex items-center text-secondary font-semibold mt-6">4.8 <img src="images/star.png"
+                                alt="" class="ml-2"></p>
+                    </div>
+                </div>
+                <div class="shadow-lg rounded-[22px] max-w-[400px] mx-auto  img-hover cursor-pointer">
+                    <div class="overflow-hidden rounded-[22px]">
+                    <img src="images/card-img3.png" alt="" class="w-full  h-full">
+                    </div>
+                    <div class="p-6">
+                        <div class="mb-3 flex gap-10">
+                            <h3 class="font-semibold">Paradise Beach, Bantayan Island</h3>
+                            <span class="font-semibold text-[#F85E9F]">$550.16</span>
+                        </div>
+                        <span class="text-sm text-[#5f5f5f] ">Rome, Italy</span>
+                        <p class="flex items-center text-secondary font-semibold mt-6">4.8 <img src="images/star.png"
+                                alt="" class="ml-2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Section End  -->
+
+
+    <!-- Travel Point Section Start  -->
+
+    <section class="pt-8 md:pt-[100px]" id="travel_point">
+        <div class="container mx-auto">
+            <div class="flex gap-10 flex-col lg:flex-row">
+                <div class="relative  max-w-[540px]">
+                    <img src="images/discount img.png " class="w-full" alt="">
+                    <button
+                        class="flex items-center py-2 px-7 gap-2 shadow text-md  font-semibold rounded-[100px] absolute right-[-1rem] top-[80px] cursor-pointer bg-[#fff]"><img
+                            src="images/discount-icons.png" alt=""> Discounted Price</button>
+                </div>
+                <div class="flex flex-col items-center lg:items-start pl-5 text-center lg:text-left">
+                    <h4>Travel Point</h4>
+                    <h2 class="mb-7">We helping you find your dream location</h2>
+                    <p class="mb-10 max-w-[480px]">Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                        has roots in a piece of classical Latin literature from 45 BC.</p>
+                    <div class="grid grid-cols-2 gap-10 max-w-[450px] relative">
+                        <div
+                            class="p-8 rounded-[22px] border border-[#E7E7E7] text-center hover:border-secondary transition-colors cursor-pointer">
+                            <h3 class="text-secondary font-semibold text-3xl mb-2">500+</h3>
+                            <span>Holiday Package</span>
+                        </div>
+                        <div
+                            class="p-8 rounded-[22px] border border-[#E7E7E7] text-center  hover:border-secondary transition-colors cursor-pointer">
+                            <h3 class="text-secondary font-semibold text-3xl mb-2">100</h3>
+                            <span>Luxury Hotel</span>
+                        </div>
+                        <div
+                            class="p-8 rounded-[22px] border border-[#E7E7E7] text-center  hover:border-secondary transition-colors cursor-pointer">
+                            <h3 class="text-secondary font-semibold text-3xl mb-2">7</h3>
+                            <span>Premium Airlines</span>
+                        </div>
+                        <div
+                            class="p-8 rounded-[22px] border border-[#E7E7E7] text-center  hover:border-secondary transition-colors cursor-pointer">
+                            <h3 class="text-secondary font-semibold text-3xl mb-2">2k</h3>
+                            <span>Happy Customer</span>
+                        </div>
+                        <div
+                            class="absolute  items-center justify-center bg-primary w-[70px] h-[70px] rounded-full right-[-40px] top-[-38px] md:flex hidden">
+                            <img src="images/ticket-star.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Point Section End  -->
+
+
+    <!-- Key features Section Start  -->
+
+    <section class="pt-[128px]">
+        <div class="container mx-auto">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+                <div>
+                    <h4>Key features</h4>
+                    <h2>We offer best services</h2>
+                    <p class="mt-3 leading-[25px] max-w-[500px] text-sm lg:text-left text-center">Contrary to popular
+                        belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC.</p>
+                    <div class="pt-12 flex flex-col gap-8">
+                        <div class="p-8 flex items-center gap-8 rounded-[30px] border border-[#E7E7E7] cursor-pointer transition-sm  hover:border-secondary">
+                            <div
+                                class="bg-secondary min-w-[70px] min-h-[70px] rounded-[30px] flex items-center justify-center">
+                                <img src="images/location.png" alt="">
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-2">We offer best services</h3>
+                                <p class="text-sm">Lorem Ipsum is not simply random text</p>
+                            </div>
+                        </div>
+                        <div class="p-8 flex items-center gap-8 rounded-[30px] border border-[#E7E7E7] cursor-pointer transition-sm hover:border-secondary">
+                            <div
+                                class="bg-primary min-w-[70px] min-h-[70px] rounded-[30px] flex items-center justify-center">
+                                <img src="images/schedule.png" alt="">
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-2">Schedule your trip</h3>
+                                <p class="text-sm">Lorem Ipsum is not simply random text</p>
+                            </div>
+                        </div>
+                        <div class="p-8 flex items-center gap-8 rounded-[30px] border border-[#E7E7E7] cursor-pointer transition-sm  hover:border-secondary">
+                            <div
+                                class="bg-[#F85E9F] min-w-[70px] min-h-[70px] rounded-[30px] flex items-center justify-center">
+                                <img src="images/discounted_coupons.png" alt="">
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-2">Get discounted coupons</h3>
+                                <p class="text-sm">Lorem Ipsum is not simply random text</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <img src="images/key_features.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Key features Section End  -->
+
+    <!-- Testimonials Section Start  -->
+
+    <section class="mt-[128px] w-full " id="testimonials">
+        <!-- <img src="images/testimonials_banner_1.png" alt="" class="w-full absolute left-0 right-0 top-[-125%]"> -->
+        <div class="container mx-auto relative overflow-hidden">
+            <h4 class="text-center text-lg">Testimonials</h4>
+            <h2 class="text-center mb-16">Trust our clients</h2>
+            <div class="mySwiper">
+            <div class="main-sliderT swiper-wrapper">
+                <div class="sliderT swiper-slide overflow-hidden">
+                    <img src="images/testimonials-logo.png " class="mx-auto mb-16" alt="">
+                    <h4 class="text-[#5f5f5f] text-center text-lg"><span class="text-secondary">Mark Smith </span>/
+                        Travel
+                        Enthusiast</h4>
+
+                    <div class="flex items-center gap-3 justify-center mt-6">
+                        <img src="images/star1.png" alt="">
+                        <img src="images/star1.png" alt="">
+                        <img src="images/star1.png" alt="">
+                        <img src="images/star1.png" alt="">
+                    </div>
+                    <p class="text-base max-w-[650px] mx-auto text-center mt-5 mb-10">Contrary to popular belief, Lorem Ipsum
+                        is
+                        not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                </div> 
+                  <div class="sliderT swiper-slide ">
+                    <img src="images/testimonials-logo.png " class="mx-auto mb-16" alt="">
+                    <h4 class="text-[#5f5f5f] text-center text-lg"><span class="text-secondary">Mark Smith </span>/
+                        Travel
+                        Enthusiast</h4>
+
+                    <div class="flex items-center gap-3 justify-center mt-6 mb-7">
+                        <img src="images/star1.png" alt="">
+                        <img src="images/star1.png" alt="">
+                        <!-- <img src="images/star1.png" alt=""> -->
+                        <!-- <img src="images/star1.png" alt=""> -->
+                    </div>
+                    <p class="text-base max-w-[650px] mx-auto text-center mt-10 mb-16">Contrary to popular belief, Lorem Ipsum
+                        is
+                        not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                </div> 
+                  <div class="sliderT swiper-slide ">
+                    <img src="images/testimonials-logo.png " class="mx-auto mb-16" alt="">
+                    <h4 class="text-[#5f5f5f] text-center text-lg"><span class="text-secondary">Mark Smith </span>/
+                        Travel
+                        Enthusiast</h4>
+
+                    <div class="flex items-center gap-3 justify-center mt-6 mb-16">
+                        <img src="images/star1.png" alt="">
+                        <img src="images/star1.png" alt="">
+                        <img src="images/star1.png" alt="">
+                    </div>
+                    <p class="text-base max-w-[650px] mx-auto text-center mt-5 mb-16">Contrary to popular belief, Lorem Ipsum
+                        is
+                        not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-button-next bg-[#5D50C6] text-[#fff] w-[55px] h-[55px] md:w-[100px] md:h-[100px] rounded-full"></div>
+            <div class="swiper-button-prev bg-[#fff] border border-[#E7E7E7]  w-[55px] h-[55px] md:w-[100px] md:h-[100px] rounded-full"></div>
+            <div class="swiper-pagination mt-6"></div>
+        </div>
+    </section>
+      <!-- Testimonials Section end  -->
+    <section class="pt-[128px] pb-20 " id="contact">
+        <div class="container mx-auto bg-[#fffbf0] rounded-3xl">
+           <div class="px-8 py-20">
+            <h3 class="text-[#F85E9F] font-medium text-sm uppercase tracking-wide text-center ">subscribe to our newsletter</h3>
+            <h2 class="max-w-[600px] mx-auto text-center">Prepare yourself & let’s explore the beauty of the world</h2>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">
+                <div class=" w-full lg:w-[600px]">
+                    <input type="text" placeholder="Your Email" class="p-6 w-full rounded-2xl outline-none">
+                </div>
+                <button class="btn bg-[#5D50C6] text-[#ffff] hover-btn border">Subscribe</button>
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container mx-auto grid sm:grid-cols-3 lg:grid-cols-4 justify-between gap-20">
+            <div class="flex flex-col">
+                <img src="images/logo.png" alt="" class="mb-4 w-[150px]">
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+                    in a piece of classical Latin literature from 45 BC.</p>
+            </div>
+
+                <ul class="list-none flex flex-col gap-4">
+                    <li class="font-semibold mb-2">Company</li>
+                    <li>About</li>
+                    <li>Career</li>
+                    <li>Mobile</li>
+                </ul> 
+
+                <ul class=" list-none flex flex-col gap-4">
+                    <li class="font-semibold mb-2">Contact</li>
+                    <li>Why Travlog?</li>
+                    <li>Partner with us</li>
+                    <li>FAQ’s</li>
+                    <li>Blog</li>
+                </ul>
+
+    
+                <ul class=" list-none flex flex-col gap-4">
+                    <li class="font-semibold mb-2">Meet Us</li>
+                    <li>+00 92 1234 56789</li>
+                    <li>info@travlog.com</li>
+                    <li>205. R Street, New York</li>
+                    <li>BD23200</li>
+                </ul>
+       
+        </div>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
